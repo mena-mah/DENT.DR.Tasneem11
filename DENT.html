@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DENT | دليل طالب طب الأسنان</title>
+<meta name="description" content="منصة لطلاب طب الأسنان في غزة: مكتبة أكاديمية، رحلة دراسية، قنوات تعليمية، مصادر عملية وأدوات ذكاء اصطناعي في مكان واحد.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cyan:#77CFE0;--dcyan:#329DB5;--lcyan:#EAF8FC;--pink:#F3B8CD;--lpink:#FFF0F5;--text:#253746;--text2:#718096;--bd:#E7EDF1;--bg:#F8FBFD;--r:18px;--sh:0 6px 22px rgba(50,157,181,.10);--font:"Cairo","IBM Plex Sans Arabic",Tahoma,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--font);color:var(--text);background:#fff;line-height:1.8}
+a{color:var(--dcyan)}img{max-width:100%}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+section.wrap,.band .wrap{padding-block:56px}.band{background:var(--bg)}.band .wrap{padding-block:56px}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.3;margin:.3em 0}h2{font-size:clamp(1.5rem,3.5vw,2.1rem);margin:0 0 6px}h3,h4{margin:.3em 0}
+.sub,.lead{color:var(--text2);max-width:70ch}.lead{font-size:1.1rem}.en,small{color:var(--text2)}small{display:block;font-size:.8rem}
+:focus-visible{outline:3px solid var(--dcyan);outline-offset:2px}
+.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.logo{font-weight:800;font-size:1.4rem;color:var(--dcyan);text-decoration:none;display:flex;gap:6px;align-items:center}
+nav{display:flex;align-items:center;gap:4px}nav a:not(.btn){padding:6px 12px;border-radius:99px;color:var(--text);text-decoration:none;font-size:.92rem;transition:.2s}
+nav a:not(.btn):hover,nav a.active{background:var(--lcyan);color:var(--dcyan)}
+.burger{display:none;background:none;border:1px solid var(--bd);border-radius:10px;font-size:1.4rem;padding:2px 12px;cursor:pointer}
+.btn{display:inline-block;background:var(--dcyan);color:#fff!important;padding:10px 22px;border-radius:99px;text-decoration:none;font:600 1rem var(--font);border:2px solid var(--dcyan);cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh)}.btn.sm{padding:5px 16px;font-size:.88rem}.btn.ghost{background:#fff;color:var(--dcyan)!important}
+.hero{background:linear-gradient(180deg,var(--lcyan),#fff)}.hero-in{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding-block:56px 24px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.art{width:100%;max-width:360px;justify-self:center;animation:fl 5s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding-bottom:40px}.quick .card{text-decoration:none;text-align:center;color:var(--text)}
+.tag{display:inline-block;background:var(--lpink);color:#B5547A;border-radius:99px;padding:0 12px;font-size:.8rem;font-weight:600}
+.grid{display:grid;gap:16px;margin-top:20px}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+.card{position:relative;background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:18px;box-shadow:var(--sh);transition:.25s;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.card:hover{transform:translateY(-4px);border-color:var(--cyan)}.card h4{margin:0;padding-inline-end:28px}
+.card .btn{margin-top:auto}.hit{outline:3px solid var(--pink);animation:pop .6s}@keyframes pop{50%{transform:scale(1.04)}}
+.fav{position:absolute;top:10px;inset-inline-end:10px;background:none;border:0;font-size:1.4rem;cursor:pointer;color:#B5547A;line-height:1}
+.thumb{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:var(--lcyan)}.ph{display:grid;place-items:center;color:var(--dcyan);font-size:2rem;background:linear-gradient(135deg,var(--lcyan),var(--lpink))}
+.feature{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:linear-gradient(135deg,var(--lcyan),var(--lpink));border:1px solid var(--bd);border-radius:24px;padding:24px;margin-top:20px}
+.feature>div{flex:1;min-width:220px}.feature p{margin:0;color:var(--text2)}.ico{font-size:2.6rem}
+.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:24px}.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--bd);background:#fff;border-radius:99px;padding:5px 16px;font:inherit;cursor:pointer}.chip.on{background:var(--dcyan);color:#fff;border-color:var(--dcyan)}
+input[type=search]{flex:1;min-width:200px;padding:11px 18px;border:1px solid var(--bd);border-radius:99px;font:inherit;background:#fff}
+.note{color:var(--text2);font-size:.88rem}.empty{color:var(--text2);padding:16px;background:var(--bg);border-radius:12px;grid-column:1/-1}
+.sbox{display:flex;gap:8px;padding-top:28px}.results{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.res{border:1px solid var(--bd);background:#fff;border-radius:12px;padding:6px 14px;font:inherit;cursor:pointer;text-align:start}.res:hover{border-color:var(--cyan);background:var(--lcyan)}
+.jg .num{background:var(--pink);color:#fff;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:700}.jg ul{padding-inline-start:18px;margin:6px 0 0}
+.bul{padding-inline-start:18px;margin:4px 0 10px;color:var(--text2)}
+.flash{perspective:800px;border:0;background:none;padding:0;min-height:200px;cursor:pointer;font:inherit;position:relative;color:var(--text)}
+.face{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:14px;text-align:center;border-radius:var(--r);border:1px solid var(--bd);backface-visibility:hidden;transition:transform .5s;font-size:.92rem}
+.front{background:var(--lcyan)}.front b{font-size:1.3rem}.front em{font-size:.75rem;color:var(--text2)}.back{background:var(--lpink);transform:rotateY(180deg)}.flash.flip .front{transform:rotateY(180deg)}.flash.flip .back{transform:rotateY(360deg)}
+.tips{padding-inline-start:22px}.tips li{padding:4px 8px;border-radius:8px}.tips li:focus{background:#fff}
+.warn{background:var(--lpink);border-inline-start:5px solid var(--pink);padding:14px 18px;border-radius:12px;margin-top:22px}
+.fav-item{display:flex;align-items:center;gap:12px;padding:10px 16px;border:1px solid var(--bd);border-radius:14px;margin-top:10px}.fav-item>div{flex:1}.fav-item .fav{position:static}
+.footer{background:var(--text);color:#cfe6ee;padding-block:36px}.footer a{color:#fff}.fgrid{display:grid;grid-template-columns:2fr 1fr;gap:24px}.footer nav{flex-direction:column;align-items:flex-start}.footer nav a{color:#cfe6ee;padding:2px 0}.copy{grid-column:1/-1;text-align:center;font-size:.85rem;margin:0}
+@media(max-width:960px){.g5{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.quick{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){.burger{display:block}nav{display:none;position:absolute;top:100%;inset-inline:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 16px;border-bottom:1px solid var(--bd)}nav.open{display:flex}.hero-in{grid-template-columns:1fr}.art{max-width:240px}}
+@media(max-width:560px){.g3,.g4,.g5{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+</style>
+</head>
+<body>
+<header class="header">
+ <div class="wrap bar">
+  <a class="logo" href="#home" aria-label="DENT الرئيسية"><span class="tooth" aria-hidden="true">🦷</span>DENT.DR.Tasneem </a>
+  <button id="menu-toggle" class="burger" aria-expanded="false" aria-controls="nav" aria-label="القائمة">☰</button>
+  <nav id="nav" aria-label="التنقل الرئيسي">
+   <a href="#home">الرئيسية</a><a href="#library">المكتبة الأكاديمية</a><a href="#journey">الخطة الدراسية</a><a href="#channels">قنوات YouTube</a><a href="#practical">العملي وCarving</a><a href="#ai">أدوات الطالب</a><a href="#tips">نصائح دراسية</a>
+   <a class="btn sm" href="#library">المكتبة الأكاديمية</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section id="home" class="hero"><div class="wrap hero-in">
+ <div>
+  <p class="tag">DENT | دليل طالب طب الأسنان</p>
+  <h1>رحلتك في طب الأسنان تبدأ من هنا.</h1>
+  <p class="lead">من أول محاضرة إلى التدريب العملي، اجمع أهم المصادر التعليمية والأكاديمية التي تحتاجها خلال رحلتك الجامعية في مكان واحد.</p>
+  <div class="actions"><a class="btn" href="#library">استكشف المكتبة الأكاديمية</a><a class="btn ghost" href="#channels">اكتشف مصادر التعلم</a></div>
+ </div>
+ <svg class="art" viewBox="0 0 200 200" role="img" aria-label="رسم توضيحي لسن"><circle cx="100" cy="100" r="92" fill="#EAF8FC"/><circle cx="150" cy="40" r="26" fill="#FFF0F5"/><path d="M60 55c14-12 30-4 40-4s26-8 40 4c14 12 6 44-2 66-6 16-8 36-16 36s-8-22-22-22-14 22-22 22-10-20-16-36c-8-22-16-54-2-66z" fill="#fff" stroke="#329DB5" stroke-width="5" stroke-linejoin="round"/></svg>
+</div>
+<div class="wrap quick">
+ <a class="card" href="#library"><b>📚 المصادر الأكاديمية</b></a><a class="card" href="#channels"><b>▶ قنوات الشرح</b></a><a class="card" href="#practical"><b>🦷 العملي وCarving</b></a><a class="card" href="#ai"><b>✨ أدوات الدراسة</b></a>
+</div></section>
+
+<section class="wrap" id="search-sec" aria-label="البحث العام">
+ <div class="sbox"><input id="gsearch" type="search" placeholder="ابحث عن مادة أو قناة أو مصطلح أو أداة… (عربي / English)" aria-label="بحث عام"><button id="gclear" class="btn sm ghost" hidden>مسح</button></div>
+ <div id="gresults" class="results" aria-live="polite"></div>
+</section>
+
+<section class="wrap" id="library">
+ <h2>المكتبة الأكاديمية</h2>
+ <p class="sub">مصادرك الدراسية في مكان واحد، للوصول إلى السلايدات والملخصات والتكليفات ونماذج الامتحانات المتاحة.</p>
+ <div class="feature"><span class="ico" aria-hidden="true">🎓</span><div><h3>المكتبة الأكاديمية — DENT</h3><p>سلايدات وملخصات وتكليفات ونماذج امتحانات للمستويات من الأول إلى الخامس.</p></div><a class="btn" href="https://sites.google.com/view/dentaug" target="_blank" rel="noopener noreferrer">افتح المكتبة الأكاديمية</a></div>
+ <div class="tools"><input id="lsearch" type="search" placeholder="ابحث عن مادة…" aria-label="بحث في المواد"><div id="filters" class="chips"></div></div>
+ <p class="note">القائمة أدناه لتصنيف المواد فقط؛ الملفات الفعلية تجدها في موقع المكتبة الأساسي.</p>
+ <div id="subjects" class="grid g4"></div>
+</section>
+
+<section class="band" id="journey"><div class="wrap">
+ <h2>رحلتك في طب الأسنان — من الأساسيات إلى التخصص</h2>
+ <p class="sub">مواد التخصص مجمّعة في خمس مراحل تعليمية.</p>
+ <div id="journey-grid" class="grid g5"></div>
+</div></section>
+
+<section class="wrap" id="terms">
+ <h2>افهم مصطلحات تشريح الأسنان بسهولة</h2>
+ <p class="sub">اضغط على أي بطاقة لقلبها ومعرفة المعنى.</p>
+ <div id="terms-grid" class="grid g5"></div>
+</section>
+
+<section class="band" id="channels"><div class="wrap">
+ <h2>قنوات تعليمية تساعدك خلال رحلتك الجامعية</h2>
+ <p class="sub">اكتشف مصادر مرئية يمكن أن تساعدك على التأسيس وفهم المواد ومراجعة المفاهيم خلال سنوات دراسة طب الأسنان.</p>
+ <div id="channels-grid" class="grid g3"></div>
+</div></section>
+
+<section class="wrap" id="practical">
+ <h2>العملي يبدأ بالفهم والتدريب</h2>
+ <p class="sub">مصادر مرئية تساعدك على التعرف على التدريب العملي وتطوير مهاراتك في تشريح الأسنان والـ Dental Carving.</p>
+ <div id="practical-grid" class="grid g3"></div>
+</section>
+
+<section class="band" id="tips"><div class="wrap">
+ <h2>ادرس بذكاء، ونظّم رحلتك الجامعية</h2>
+ <p class="sub">أفكار ومصادر تساعدك على تنظيم وقتك، وتطوير أسلوب المراجعة، والاستفادة من وقتك الجامعي.</p>
+ <div id="study-grid" class="grid g4"></div>
+ <h3>نصائح قصيرة <small>(اضغط على أي نصيحة لتعديلها)</small></h3>
+ <ol id="tips-list" class="tips"></ol>
+</div></section>
+
+<section class="wrap" id="ai">
+ <h2>أدوات ذكية تساعدك في دراستك</h2>
+ <p class="sub">استخدم الأدوات الرقمية لفهم المواد وتنظيم الملاحظات والتدرب على الأسئلة ومراجعة المعلومات.</p>
+ <div id="ai-grid" class="grid g4"></div>
+ <p class="warn" role="note">أدوات الذكاء الاصطناعي وسيلة مساعدة للدراسة، وليست بديلًا عن الكتب والمراجع والمحاضرات وتعليمات أعضاء هيئة التدريس. تحقّق من المعلومات الطبية قبل اعتمادها.</p>
+</section>
+
+<section class="wrap" id="favorites">
+ <h2>مصادري المفضلة</h2>
+ <p class="sub">تُحفظ في هذا المتصفح فقط ولا تتزامن بين الأجهزة.</p>
+ <div id="favs-list"></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap fgrid">
+ <div><a class="logo" href="#home"><span aria-hidden="true">🦷</span>DENT</a><p>منصة تجمع مصادر طلاب طب الأسنان الأكاديمية والتعليمية في مكان واحد.</p><p><b>خطوة بخطوة، نحو مستقبل مهني أفضل.</b></p></div>
+ <nav aria-label="روابط التذييل"><a href="#library">المكتبة الأكاديمية</a><a href="#channels">القنوات التعليمية</a><a href="#practical">العملي وCarving</a><a href="#ai">أدوات الدراسة</a></nav>
+ <p class="copy">© <span id="year"></span> DENT</p>
+</div></footer>
+<script>
+/* بيانات DENT — عدّل هذا الملف فقط لتغيير المحتوى */
+const S=(cat,l)=>l.map(([en,ar])=>({cat,en,ar}));
+const DENT={
+library:"https://sites.google.com/view/dentaug",
+subjects:[
+...S("univ",[["Holy Quran","القرآن الكريم"],["Tafsir","التفسير"],["Fiqh","الفقه"],["Aqeedah","العقيدة"],["Hadith","الحديث"],["Environmental Sciences","علوم البيئة"],["Arabic Language","اللغة العربية"],["English Language","اللغة الإنجليزية"]]),
+...S("college",[["Medical Terminology","مصطلحات طبية"],["General Physics","فيزياء عامة"],["Biophysics","فيزياء حيوية"],["Organic Chemistry","كيمياء عضوية"],["Biochemistry","كيمياء حيوية"],["General Biology","بيولوجيا عامة"],["Genetics","وراثة"],["General Anatomy","تشريح عام"],["Head & Neck Anatomy","تشريح الرأس والرقبة"],["Embryology","علم الأجنة"],["Histology","علم الأنسجة"],["Physiology","علم وظائف الأعضاء"],["Neurophysiology","علم وظائف الأعصاب"],["Medical Microbiology","أحياء دقيقة طبية"],["First Aid","الإسعافات الأولية"],["General Pathology","علم الأمراض"],["Internal Medicine","الباطنة"],["General Surgery","جراحة عامة"],["Pharmacology","علم الأدوية"],["ENT","الأنف والأذن والحنجرة"],["Ophthalmology","طب العيون"],["Dermatology","الأمراض الجلدية"],["Biostatistics","الإحصاء الحيوي"],["Psychology","علم النفس"]]),
+...S("spec",[["Dental Anatomy","تشريح الأسنان"],["Introduction to Dentistry","مقدمة في طب الأسنان"],["Oral Histology","علم الأنسجة الفموية"],["Dental Materials","المواد السنية"],["Operative Dentistry","العلاج التحفظي"],["Endodontics","علاج اللب"],["Removable Prosthodontics","التركيبات المتحركة"],["Fixed Prosthodontics","التركيبات الثابتة"],["Dental Anesthesia & Infection Control","التخدير السني ومكافحة العدوى"],["Oral Surgery","جراحة الفم"],["Maxillofacial Surgery","جراحة الوجه والفكين"],["Dental Implants","زراعة الأسنان"],["Oral Pathology","علم أمراض الفم"],["Oral Medicine","طب الفم"],["Oral Radiology & Diagnosis","الأشعة الفموية والتشخيص"],["Forensic Dentistry","طب الأسنان الشرعي"],["Pediatric Dentistry","طب أسنان الأطفال"],["Orthodontics","تقويم الأسنان"],["Periodontology","أمراض دواعم السن"],["Dental Occlusion","الإطباق السني"]])
+],
+cats:{univ:"متطلبات الجامعة",college:"متطلبات الكلية والمواد الطبية",spec:"مواد التخصص"},
+journey:[
+{en:"The Basics",ar:"الأساسيات",n:["Dental Anatomy","Introduction to Dentistry","Oral Histology","Dental Materials"]},
+{en:"Fix & Replace",ar:"الترميم والتعويض",n:["Operative Dentistry","Endodontics","Removable Prosthodontics","Fixed Prosthodontics"]},
+{en:"Surgery & Safety",ar:"الجراحة والأمان",n:["Dental Anesthesia & Infection Control","Oral Surgery","Maxillofacial Surgery","Dental Implants"]},
+{en:"Detect & Diagnose",ar:"التشخيص والكشف",n:["Oral Pathology","Oral Medicine","Oral Radiology & Diagnosis","Forensic Dentistry"]},
+{en:"Growth & Gums",ar:"النمو واللثة",n:["Pediatric Dentistry","Orthodontics","Periodontology","Dental Occlusion"]}],
+terms:[
+{en:"Mesial",ar:"ميزيال",d:"السطح أو الجهة التي تتجه نحو خط منتصف الوجه، أي الخط الوهمي بين القاطعتين الأماميتين.",tip:"Mesial = Toward the Middle"},
+{en:"Distal",ar:"ديستال",d:"السطح أو الجهة التي تبتعد عن خط منتصف الوجه باتجاه خلف الفم.",tip:"Distal = Distant from the Middle"},
+{en:"Buccal / Labial",ar:"خدّي / شفوي",d:"السطح المواجه للخد في الأسنان الخلفية، أو الشفة في الأسنان الأمامية."},
+{en:"Lingual / Palatal",ar:"لساني / حنكي",d:"السطح المواجه للسان، ويُسمى حنكيًا في الفك العلوي عندما يواجه الحنك."},
+{en:"Occlusal / Incisal",ar:"إطباقي / حافة القطع",d:"سطح الإطباق في الأسنان الخلفية، وحافة القطع في الأسنان الأمامية."}],
+channels:[
+{name:"الباش دنتست",url:"https://youtube.com/@ezzatshouman?si=U-4ivT8MVxKecQIK"},
+{name:"Dentity",url:"https://youtube.com/@dentity?si=t9f5I_qEOsW_KuCj"},
+{name:"دكتور اتش",url:"https://youtube.com/@heshamelseoudi?si=fidLcKCk8H5D8PIn"},
+{name:"مملكة طب الأسنان",url:"https://youtube.com/@dental.kd1?si=0uljaSpFyKbLAENy"},
+{name:"دكتور إبراهيم الحسيني",url:"https://youtube.com/@dr.ibrahim.elhusseiny?si=ABTthvHGrTGWG_09"}],
+practical:[
+{name:"قائمة تشغيل Carving الأولى",kind:"قائمة تشغيل",url:"https://youtube.com/playlist?list=PLhvjhqJgKhP5w0WPTRcG2Kb0xWhm6oWTN&si=8EHR6Ca4Q6zndXoO"},
+{name:"فيديو تعليمي أول",kind:"فيديو",vid:"jno4PMPU63E",url:"https://youtu.be/jno4PMPU63E?si=gu7wGhpnXu1oOIOd"},
+{name:"قناة Mohaymen Nayf",kind:"قناة",url:"https://youtube.com/@mohaymennayf?si=m9qSzBPWKCAY7p88"},
+{name:"قناة Ramiology",kind:"قناة",url:"https://youtube.com/@ramiology?si=7aPTi5iejbDLuz0f"},
+{name:"قائمة تشغيل إضافية",kind:"قائمة تشغيل",url:"https://youtube.com/playlist?list=PLyolygp7ba7iUEuE0-U2pb32Yyz36VYAw&si=V9RMblIcB73p34R-"},
+{name:"فيديو تعليمي إضافي",kind:"فيديو",vid:"x7aIgG1V3lg",url:"https://youtu.be/x7aIgG1V3lg?si=fYSIhAwZ__mz07yv"}],
+studyVideos:[
+{name:"فيديو دراسي 1",vid:"j0e9wiLo8S8",url:"https://youtu.be/j0e9wiLo8S8?si=n4koiiDytPkyDpYW"},
+{name:"فيديو دراسي 2",vid:"vfR45Z7J2Lk",url:"https://youtu.be/vfR45Z7J2Lk?si=4yjMFcDQCepGfaJe"},
+{name:"فيديو دراسي 3",vid:"qjl8wdrpEpc",url:"https://youtu.be/qjl8wdrpEpc?si=AuWgZ3WLKmAWDHJN"},
+{name:"فيديو دراسي 4",vid:"A0AsS0yfegU",url:"https://youtu.be/A0AsS0yfegU?si=kae7cvIw_6OesFR-"}],
+tips:["نظّم وقت المحاضرات والمراجعة في جدول أسبوعي ثابت.","قسّم كل مادة إلى أجزاء صغيرة وراجع جزءًا كل يوم.","اعتمد المراجعة النشطة: أغلق الملاحظات وحاول التذكر وحل الأسئلة.","رتّب السلايدات والملخصات في مجلدات واضحة لكل مادة.","وازن بين الدراسة النظرية والتدريب العملي؛ كل منهما يدعم الآخر."],
+ai:[
+{name:"Claude",url:"https://claude.ai/",b:["تبسيط المفاهيم والمواد الصعبة","تلخيص المحاضرات والملفات المرفوعة","إنشاء أسئلة اختيار من متعدد للتدريب"]},
+{name:"ChatGPT",url:"https://chatgpt.com/",b:["شرح المصطلحات الطبية الإنجليزية","إنشاء أسئلة تدريبية وتمارين","تبسيط الملاحظات والملخصات"]},
+{name:"NotebookLM",url:"https://notebook.google/?hl=ar-EG",b:["الاستفسار عن الملفات والسلايدات المرفوعة","إعداد ملخصات وأدلة دراسة اعتمادًا على المصادر","المساعدة في إعداد أسئلة للمراجعة"]},
+{name:"Perplexity",url:"https://www.perplexity.ai/",b:["المساعدة في البحث عن المعلومات","استكشاف المصادر والمراجع","إجابات تتضمن روابط للمصادر عند توفرها"]}]
+};
+
+(()=>{
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const norm=t=>(t||"").toLowerCase().replace(/[\u064B-\u0652\u0640]/g,"").replace(/[أإآ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/\s+/g," ").trim();
+const D=DENT,KEY="dent-favorites";
+let favs=new Set();try{favs=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify([...favs]))}catch(e){}};
+const yt=v=>`https://img.youtube.com/vi/${v}/hqdefault.jpg`;
+const heart=k=>`<button class="fav${favs.has(k)?" on":""}" data-fav="${k}" aria-pressed="${favs.has(k)}" aria-label="${favs.has(k)?"إزالة من المفضلة":"إضافة إلى المفضلة"}">${favs.has(k)?"♥":"♡"}</button>`;
+const thumb=v=>v?`<img class="thumb" src="${yt(v)}" alt="صورة معاينة الفيديو" loading="lazy">`:`<div class="thumb ph" aria-hidden="true">▶</div>`;
+const link=(u,t)=>`<a class="btn sm" href="${u}" target="_blank" rel="noopener noreferrer">${t}</a>`;
+
+/* سجل العناصر القابلة للبحث والمفضلة */
+const reg=[];
+D.subjects.forEach(s=>reg.push({key:"s:"+s.en,sec:"library",title:s.ar,sub:s.en,words:s.ar+" "+s.en}));
+D.terms.forEach(t=>reg.push({key:"t:"+t.en,sec:"terms",title:t.ar,sub:t.en,words:t.ar+" "+t.en+" "+t.d}));
+D.channels.forEach(c=>reg.push({key:"c:"+c.name,sec:"channels",title:c.name,sub:"قناة تعليمية",words:c.name,url:c.url}));
+D.practical.forEach(p=>reg.push({key:"p:"+p.name,sec:"practical",title:p.name,sub:p.kind,words:p.name+" carving "+p.kind,url:p.url}));
+D.studyVideos.forEach(v=>reg.push({key:"v:"+v.name,sec:"tips",title:v.name,sub:"نصائح دراسية",words:v.name,url:v.url}));
+D.ai.forEach(a=>reg.push({key:"a:"+a.name,sec:"ai",title:a.name,sub:"أداة ذكاء اصطناعي",words:a.name+" "+a.b.join(" "),url:a.url}));
+const byKey=Object.fromEntries(reg.map(r=>[r.key,r]));
+
+/* المكتبة */
+let cat="all",lq="";
+function renderSubjects(){
+  const list=D.subjects.filter(s=>(cat==="all"||s.cat===cat)&&(!lq||norm(s.ar+" "+s.en).includes(lq)));
+  $("#subjects").innerHTML=list.length?list.map(s=>`<article class="card sub" data-key="s:${s.en}"><span class="tag">${D.cats[s.cat]}</span><h4>${s.ar}</h4><p class="en" dir="ltr">${s.en}</p>${heart("s:"+s.en)}</article>`).join(""):`<p class="empty">لا توجد مواد مطابقة لبحثك.</p>`;
+}
+$("#filters").innerHTML=[["all","الكل"],...Object.entries(D.cats)].map(([k,v],i)=>`<button class="chip${i?"":" on"}" data-cat="${k}">${v}</button>`).join("");
+$("#filters").addEventListener("click",e=>{const b=e.target.closest("[data-cat]");if(!b)return;cat=b.dataset.cat;$$(".chip").forEach(c=>c.classList.toggle("on",c===b));renderSubjects()});
+$("#lsearch").addEventListener("input",e=>{lq=norm(e.target.value);renderSubjects()});
+
+/* الرحلة */
+const subAr=Object.fromEntries(D.subjects.map(s=>[s.en,s.ar]));
+$("#journey-grid").innerHTML=D.journey.map((g,i)=>`<article class="card jg"><span class="num">${i+1}</span><h3>${g.ar}</h3><p class="en" dir="ltr">${g.en}</p><ul>${g.n.map(n=>`<li>${subAr[n]} <small dir="ltr">${n}</small></li>`).join("")}</ul></article>`).join("");
+
+/* المصطلحات */
+$("#terms-grid").innerHTML=D.terms.map(t=>`<button class="flash" data-key="t:${t.en}" aria-label="اقلب البطاقة: ${t.ar}"><span class="face front"><b>${t.ar}</b><small dir="ltr">${t.en}</small><em>اضغط للقلب</em></span><span class="face back"><span>${t.d}</span>${t.tip?`<strong dir="ltr">${t.tip}</strong>`:""}</span></button>`).join("");
+$("#terms-grid").addEventListener("click",e=>{const f=e.target.closest(".flash");if(f)f.classList.toggle("flip")});
+
+/* قنوات وعملي ونصائح وAI */
+$("#channels-grid").innerHTML=D.channels.map(c=>`<article class="card" data-key="c:${c.name}"><div class="thumb ph yt" aria-hidden="true">▶</div><h4>${c.name}</h4>${link(c.url,"زيارة القناة")}${heart("c:"+c.name)}</article>`).join("");
+$("#practical-grid").innerHTML=D.practical.map(p=>`<article class="card" data-key="p:${p.name}">${thumb(p.vid)}<span class="tag">${p.kind}</span><h4>${p.name}</h4>${link(p.url,"افتح على YouTube")}${heart("p:"+p.name)}</article>`).join("");
+$("#study-grid").innerHTML=D.studyVideos.map(v=>`<article class="card" data-key="v:${v.name}">${thumb(v.vid)}<h4>${v.name}</h4>${link(v.url,"شاهد الفيديو")}${heart("v:"+v.name)}</article>`).join("");
+$("#tips-list").innerHTML=D.tips.map(t=>`<li contenteditable="true" spellcheck="false">${t}</li>`).join("");
+$("#ai-grid").innerHTML=D.ai.map(a=>`<article class="card" data-key="a:${a.name}"><h4 dir="ltr">${a.name}</h4><ul class="bul">${a.b.map(x=>`<li>${x}</li>`).join("")}</ul>${link(a.url,"افتح "+a.name)}${heart("a:"+a.name)}</article>`).join("");
+
+/* المفضلة */
+function renderFavs(){
+  const list=[...favs].map(k=>byKey[k]).filter(Boolean);
+  $("#favs-list").innerHTML=list.length?list.map(r=>`<div class="fav-item"><div><b>${r.title}</b><small>${r.sub}</small></div>${r.url?link(r.url,"فتح"):`<button class="btn sm ghost" data-go="${r.key}">اذهب للقسم</button>`}<button class="fav on" data-fav="${r.key}" aria-label="إزالة من المفضلة">♥</button></div>`).join(""):`<p class="empty">لم تحفظ أي مصدر بعد. اضغط ♡ على أي بطاقة لإضافتها.</p>`;
+}
+document.addEventListener("click",e=>{
+  const f=e.target.closest("[data-fav]");
+  if(f){const k=f.dataset.fav;favs.has(k)?favs.delete(k):favs.add(k);save();$$(`[data-fav="${CSS.escape(k)}"]`).forEach(b=>{const on=favs.has(k);b.classList.toggle("on",on);b.textContent=on?"♥":"♡";b.setAttribute("aria-pressed",on);b.setAttribute("aria-label",on?"إزالة من المفضلة":"إضافة إلى المفضلة")});renderFavs();return}
+  const g=e.target.closest("[data-go]");if(g)goTo(g.dataset.go);
+});
+
+/* البحث العام */
+function goTo(key){
+  const r=byKey[key];if(!r)return;
+  if(r.sec==="library"){cat="all";lq="";$("#lsearch").value="";$$(".chip").forEach((c,i)=>c.classList.toggle("on",!i));renderSubjects()}
+  const el=$(`[data-key="${CSS.escape(key)}"]`)||$("#"+r.sec);
+  el.scrollIntoView({behavior:"smooth",block:"center"});el.classList.add("hit");setTimeout(()=>el.classList.remove("hit"),2200);
+}
+const gs=$("#gsearch"),gr=$("#gresults");
+function doSearch(){
+  const q=norm(gs.value);$("#gclear").hidden=!q;
+  if(!q){gr.innerHTML="";return}
+  const parts=q.split(" ");
+  const res=reg.filter(r=>{const w=norm(r.words);return parts.every(p=>w.includes(p))}).slice(0,12);
+  gr.innerHTML=res.length?res.map(r=>`<button class="res" data-go="${r.key}"><b>${r.title}</b><small>${r.sub}</small></button>`).join(""):`<p class="empty">لا توجد نتائج مطابقة. جرّب كلمة أخرى بالعربية أو الإنجليزية.</p>`;
+}
+gs.addEventListener("input",doSearch);
+$("#gclear").addEventListener("click",()=>{gs.value="";doSearch();gs.focus()});
+
+/* صور لا تُحمَّل */
+document.addEventListener("error",e=>{const i=e.target;if(i.tagName==="IMG"&&i.classList.contains("thumb")){const d=document.createElement("div");d.className="thumb ph";d.textContent="▶";d.setAttribute("aria-hidden","true");i.replaceWith(d)}},true);
+
+/* القائمة والتنقل */
+const nav=$("#nav"),tg=$("#menu-toggle");
+tg.addEventListener("click",()=>{const o=nav.classList.toggle("open");tg.setAttribute("aria-expanded",o)});
+$$("#nav a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");tg.setAttribute("aria-expanded","false")}));
+const links=$$("#nav a[href^='#']");
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+$$("main section[id]").forEach(s=>io.observe(s));
+
+renderSubjects();renderFavs();$("#year").textContent=new Date().getFullYear();
+})();
+
+</script>
+</body>
+</html>
